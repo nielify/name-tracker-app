@@ -36,7 +36,7 @@ export default function App() {
       <Text style={styles.nameListText}>Name List:</Text>
       <ScrollView style={styles.nameListScroll}>
         {nameList.map(name => (
-          <View key={name} style={styles.nameTextView}>
+          <View key={name} style={styles.nameContainer}>
             <Text style={styles.nameText}> {name}</Text>
           </View>
         ))}
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 18,
   },
-  nameTextView: {
+  nameContainer: {
     width: '100%',
     padding: 10,
   },
